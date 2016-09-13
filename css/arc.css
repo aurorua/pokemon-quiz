@@ -1,0 +1,1140 @@
+/* Arc Styles */
+.arc-wrapper {
+    position: relative;
+    padding: 0;
+    margin-top: 6em;
+    overflow: hidden;
+}
+.arc {
+	position: relative;
+	
+    padding-bottom: calc(100% - 1em);
+    margin-top: 1em;
+    margin-bottom: -50%;
+    border: .5em solid rgba(0,51,51,.1);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+	
+    transform: rotate(45deg);
+}
+.arc-partial {
+	overflow: hidden;
+    position: absolute;
+    /* make sure top & left values are - the width of the border */
+    /* the bottom right corner is the centre of the parent circle */
+    top: -.5em;
+    right: 50%;
+    bottom: 50%;
+    left: -.5em;
+    /* the transform origin is the bottom right corner */
+    transform-origin: 100% 100%;
+	transition: transform 800ms;
+}
+.arc-partial:before {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+	
+    border: .5em solid rgb(255,255,255);
+    border-radius: 50%;
+    width: 200%;
+	height: 200%;
+	
+	transition: transform 800ms;
+}
+.arc-partial-left.arc-0 {
+    transform: rotate(-45deg) skewX(90deg);
+}
+.arc-partial-left.arc-0:before {
+    transform: skewX(-90deg);
+}
+.arc-partial-left.arc-1 {
+    transform: rotate(-45deg) skewX(89deg);
+}
+.arc-partial-left.arc-1:before {
+    transform: skewX(-89deg);
+}
+.arc-partial-left.arc-2 {
+    transform: rotate(-45deg) skewX(88deg);
+}
+.arc-partial-left.arc-2:before {
+    transform: skewX(-88deg);
+}
+.arc-partial-left.arc-3 {
+    transform: rotate(-45deg) skewX(87deg);
+}
+.arc-partial-left.arc-3:before {
+    transform: skewX(-87deg);
+}
+.arc-partial-left.arc-4 {
+    transform: rotate(-45deg) skewX(86deg);
+}
+.arc-partial-left.arc-4:before {
+    transform: skewX(-86deg);
+}
+.arc-partial-left.arc-5 {
+    transform: rotate(-45deg) skewX(85deg);
+}
+.arc-partial-left.arc-5:before {
+    transform: skewX(-85deg);
+}
+.arc-partial-left.arc-6 {
+    transform: rotate(-45deg) skewX(84deg);
+}
+.arc-partial-left.arc-6:before {
+    transform: skewX(-84deg);
+}
+.arc-partial-left.arc-7 {
+    transform: rotate(-45deg) skewX(83deg);
+}
+.arc-partial-left.arc-7:before {
+    transform: skewX(-83deg);
+}
+.arc-partial-left.arc-8 {
+    transform: rotate(-45deg) skewX(82deg);
+}
+.arc-partial-left.arc-8:before {
+    transform: skewX(-82deg);
+}
+.arc-partial-left.arc-9 {
+    transform: rotate(-45deg) skewX(81deg);
+}
+.arc-partial-left.arc-9:before {
+    transform: skewX(-81deg);
+}
+.arc-partial-left.arc-10 {
+    transform: rotate(-45deg) skewX(80deg);
+}
+.arc-partial-left.arc-10:before {
+    transform: skewX(-80deg);
+}
+.arc-partial-left.arc-11 {
+    transform: rotate(-45deg) skewX(79deg);
+}
+.arc-partial-left.arc-11:before {
+    transform: skewX(-79deg);
+}
+.arc-partial-left.arc-12 {
+    transform: rotate(-45deg) skewX(78deg);
+}
+.arc-partial-left.arc-12:before {
+    transform: skewX(-78deg);
+}
+.arc-partial-left.arc-13 {
+    transform: rotate(-45deg) skewX(77deg);
+}
+.arc-partial-left.arc-13:before {
+    transform: skewX(-77deg);
+}
+.arc-partial-left.arc-14 {
+    transform: rotate(-45deg) skewX(76deg);
+}
+.arc-partial-left.arc-14:before {
+    transform: skewX(-76deg);
+}
+.arc-partial-left.arc-15 {
+    transform: rotate(-45deg) skewX(75deg);
+}
+.arc-partial-left.arc-15:before {
+    transform: skewX(-75deg);
+}
+.arc-partial-left.arc-16 {
+    transform: rotate(-45deg) skewX(74deg);
+}
+.arc-partial-left.arc-16:before {
+    transform: skewX(-74deg);
+}
+.arc-partial-left.arc-17 {
+    transform: rotate(-45deg) skewX(73deg);
+}
+.arc-partial-left.arc-17:before {
+    transform: skewX(-73deg);
+}
+.arc-partial-left.arc-18 {
+    transform: rotate(-45deg) skewX(72deg);
+}
+.arc-partial-left.arc-18:before {
+    transform: skewX(-72deg);
+}
+.arc-partial-left.arc-19 {
+    transform: rotate(-45deg) skewX(71deg);
+}
+.arc-partial-left.arc-19:before {
+    transform: skewX(-71deg);
+}
+.arc-partial-left.arc-20 {
+    transform: rotate(-45deg) skewX(70deg);
+}
+.arc-partial-left.arc-20:before {
+    transform: skewX(-70deg);
+}
+.arc-partial-left.arc-21 {
+    transform: rotate(-45deg) skewX(69deg);
+}
+.arc-partial-left.arc-21:before {
+    transform: skewX(-69deg);
+}
+.arc-partial-left.arc-22 {
+    transform: rotate(-45deg) skewX(68deg);
+}
+.arc-partial-left.arc-22:before {
+    transform: skewX(-68deg);
+}
+.arc-partial-left.arc-23 {
+    transform: rotate(-45deg) skewX(67deg);
+}
+.arc-partial-left.arc-23:before {
+    transform: skewX(-67deg);
+}
+.arc-partial-left.arc-24 {
+    transform: rotate(-45deg) skewX(66deg);
+}
+.arc-partial-left.arc-24:before {
+    transform: skewX(-66deg);
+}
+.arc-partial-left.arc-25 {
+    transform: rotate(-45deg) skewX(65deg);
+}
+.arc-partial-left.arc-25:before {
+    transform: skewX(-65deg);
+}
+.arc-partial-left.arc-26 {
+    transform: rotate(-45deg) skewX(64deg);
+}
+.arc-partial-left.arc-26:before {
+    transform: skewX(-64deg);
+}
+.arc-partial-left.arc-27 {
+    transform: rotate(-45deg) skewX(63deg);
+}
+.arc-partial-left.arc-27:before {
+    transform: skewX(-63deg);
+}
+.arc-partial-left.arc-28 {
+    transform: rotate(-45deg) skewX(62deg);
+}
+.arc-partial-left.arc-28:before {
+    transform: skewX(-62deg);
+}
+.arc-partial-left.arc-29 {
+    transform: rotate(-45deg) skewX(61deg);
+}
+.arc-partial-left.arc-29:before {
+    transform: skewX(-61deg);
+}
+.arc-partial-left.arc-30 {
+    transform: rotate(-45deg) skewX(60deg);
+}
+.arc-partial-left.arc-30:before {
+    transform: skewX(-60deg);
+}
+.arc-partial-left.arc-31 {
+    transform: rotate(-45deg) skewX(59deg);
+}
+.arc-partial-left.arc-31:before {
+    transform: skewX(-59deg);
+}
+.arc-partial-left.arc-32 {
+    transform: rotate(-45deg) skewX(58deg);
+}
+.arc-partial-left.arc-32:before {
+    transform: skewX(-58deg);
+}
+.arc-partial-left.arc-33 {
+    transform: rotate(-45deg) skewX(57deg);
+}
+.arc-partial-left.arc-33:before {
+    transform: skewX(-57deg);
+}
+.arc-partial-left.arc-34 {
+    transform: rotate(-45deg) skewX(56deg);
+}
+.arc-partial-left.arc-34:before {
+    transform: skewX(-56deg);
+}
+.arc-partial-left.arc-35 {
+    transform: rotate(-45deg) skewX(55deg);
+}
+.arc-partial-left.arc-35:before {
+    transform: skewX(-55deg);
+}
+.arc-partial-left.arc-36 {
+    transform: rotate(-45deg) skewX(54deg);
+}
+.arc-partial-left.arc-36:before {
+    transform: skewX(-54deg);
+}
+.arc-partial-left.arc-37 {
+    transform: rotate(-45deg) skewX(53deg);
+}
+.arc-partial-left.arc-37:before {
+    transform: skewX(-53deg);
+}
+.arc-partial-left.arc-38 {
+    transform: rotate(-45deg) skewX(52deg);
+}
+.arc-partial-left.arc-38:before {
+    transform: skewX(-52deg);
+}
+.arc-partial-left.arc-39 {
+    transform: rotate(-45deg) skewX(51deg);
+}
+.arc-partial-left.arc-39:before {
+    transform: skewX(-51deg);
+}
+.arc-partial-left.arc-40 {
+    transform: rotate(-45deg) skewX(50deg);
+}
+.arc-partial-left.arc-40:before {
+    transform: skewX(-50deg);
+}
+.arc-partial-left.arc-41 {
+    transform: rotate(-45deg) skewX(49deg);
+}
+.arc-partial-left.arc-41:before {
+    transform: skewX(-49deg);
+}
+.arc-partial-left.arc-42 {
+    transform: rotate(-45deg) skewX(48deg);
+}
+.arc-partial-left.arc-42:before {
+    transform: skewX(-48deg);
+}
+.arc-partial-left.arc-43 {
+    transform: rotate(-45deg) skewX(47deg);
+}
+.arc-partial-left.arc-43:before {
+    transform: skewX(-47deg);
+}
+.arc-partial-left.arc-44 {
+    transform: rotate(-45deg) skewX(46deg);
+}
+.arc-partial-left.arc-44:before {
+    transform: skewX(-46deg);
+}
+.arc-partial-left.arc-45 {
+    transform: rotate(-45deg) skewX(45deg);
+}
+.arc-partial-left.arc-45:before {
+    transform: skewX(-45deg);
+}
+.arc-partial-left.arc-46 {
+    transform: rotate(-45deg) skewX(44deg);
+}
+.arc-partial-left.arc-46:before {
+    transform: skewX(-44deg);
+}
+.arc-partial-left.arc-47 {
+    transform: rotate(-45deg) skewX(43deg);
+}
+.arc-partial-left.arc-47:before {
+    transform: skewX(-43deg);
+}
+.arc-partial-left.arc-48 {
+    transform: rotate(-45deg) skewX(42deg);
+}
+.arc-partial-left.arc-48:before {
+    transform: skewX(-42deg);
+}
+.arc-partial-left.arc-49 {
+    transform: rotate(-45deg) skewX(41deg);
+}
+.arc-partial-left.arc-49:before {
+    transform: skewX(-41deg);
+}
+.arc-partial-left.arc-50 {
+    transform: rotate(-45deg) skewX(40deg);
+}
+.arc-partial-left.arc-50:before {
+    transform: skewX(-40deg);
+}
+.arc-partial-left.arc-51 {
+    transform: rotate(-45deg) skewX(39deg);
+}
+.arc-partial-left.arc-51:before {
+    transform: skewX(-39deg);
+}
+.arc-partial-left.arc-52 {
+    transform: rotate(-45deg) skewX(38deg);
+}
+.arc-partial-left.arc-52:before {
+    transform: skewX(-38deg);
+}
+.arc-partial-left.arc-53 {
+    transform: rotate(-45deg) skewX(37deg);
+}
+.arc-partial-left.arc-53:before {
+    transform: skewX(-37deg);
+}
+.arc-partial-left.arc-54 {
+    transform: rotate(-45deg) skewX(36deg);
+}
+.arc-partial-left.arc-54:before {
+    transform: skewX(-36deg);
+}
+.arc-partial-left.arc-55 {
+    transform: rotate(-45deg) skewX(35deg);
+}
+.arc-partial-left.arc-55:before {
+    transform: skewX(-35deg);
+}
+.arc-partial-left.arc-56 {
+    transform: rotate(-45deg) skewX(34deg);
+}
+.arc-partial-left.arc-56:before {
+    transform: skewX(-34deg);
+}
+.arc-partial-left.arc-57 {
+    transform: rotate(-45deg) skewX(33deg);
+}
+.arc-partial-left.arc-57:before {
+    transform: skewX(-33deg);
+}
+.arc-partial-left.arc-58 {
+    transform: rotate(-45deg) skewX(32deg);
+}
+.arc-partial-left.arc-58:before {
+    transform: skewX(-32deg);
+}
+.arc-partial-left.arc-59 {
+    transform: rotate(-45deg) skewX(31deg);
+}
+.arc-partial-left.arc-59:before {
+    transform: skewX(-31deg);
+}
+.arc-partial-left.arc-60 {
+    transform: rotate(-45deg) skewX(30deg);
+}
+.arc-partial-left.arc-60:before {
+    transform: skewX(-30deg);
+}
+.arc-partial-left.arc-61 {
+    transform: rotate(-45deg) skewX(29deg);
+}
+.arc-partial-left.arc-61:before {
+    transform: skewX(-29deg);
+}
+.arc-partial-left.arc-62 {
+    transform: rotate(-45deg) skewX(28deg);
+}
+.arc-partial-left.arc-62:before {
+    transform: skewX(-28deg);
+}
+.arc-partial-left.arc-63 {
+    transform: rotate(-45deg) skewX(27deg);
+}
+.arc-partial-left.arc-63:before {
+    transform: skewX(-27deg);
+}
+.arc-partial-left.arc-64 {
+    transform: rotate(-45deg) skewX(26deg);
+}
+.arc-partial-left.arc-64:before {
+    transform: skewX(-26deg);
+}
+.arc-partial-left.arc-65 {
+    transform: rotate(-45deg) skewX(25deg);
+}
+.arc-partial-left.arc-65:before {
+    transform: skewX(-25deg);
+}
+.arc-partial-left.arc-66 {
+    transform: rotate(-45deg) skewX(24deg);
+}
+.arc-partial-left.arc-66:before {
+    transform: skewX(-24deg);
+}
+.arc-partial-left.arc-67 {
+    transform: rotate(-45deg) skewX(23deg);
+}
+.arc-partial-left.arc-67:before {
+    transform: skewX(-23deg);
+}
+.arc-partial-left.arc-68 {
+    transform: rotate(-45deg) skewX(22deg);
+}
+.arc-partial-left.arc-68:before {
+    transform: skewX(-22deg);
+}
+.arc-partial-left.arc-69 {
+    transform: rotate(-45deg) skewX(21deg);
+}
+.arc-partial-left.arc-69:before {
+    transform: skewX(-21deg);
+}
+.arc-partial-left.arc-70 {
+    transform: rotate(-45deg) skewX(20deg);
+}
+.arc-partial-left.arc-70:before {
+    transform: skewX(-20deg);
+}
+.arc-partial-left.arc-71 {
+    transform: rotate(-45deg) skewX(19deg);
+}
+.arc-partial-left.arc-71:before {
+    transform: skewX(-19deg);
+}
+.arc-partial-left.arc-72 {
+    transform: rotate(-45deg) skewX(18deg);
+}
+.arc-partial-left.arc-72:before {
+    transform: skewX(-18deg);
+}
+.arc-partial-left.arc-73 {
+    transform: rotate(-45deg) skewX(17deg);
+}
+.arc-partial-left.arc-73:before {
+    transform: skewX(-17deg);
+}
+.arc-partial-left.arc-74 {
+    transform: rotate(-45deg) skewX(16deg);
+}
+.arc-partial-left.arc-74:before {
+    transform: skewX(-16deg);
+}
+.arc-partial-left.arc-75 {
+    transform: rotate(-45deg) skewX(15deg);
+}
+.arc-partial-left.arc-75:before {
+    transform: skewX(-15deg);
+}
+.arc-partial-left.arc-76 {
+    transform: rotate(-45deg) skewX(14deg);
+}
+.arc-partial-left.arc-76:before {
+    transform: skewX(-14deg);
+}
+.arc-partial-left.arc-77 {
+    transform: rotate(-45deg) skewX(13deg);
+}
+.arc-partial-left.arc-77:before {
+    transform: skewX(-13deg);
+}
+.arc-partial-left.arc-78 {
+    transform: rotate(-45deg) skewX(12deg);
+}
+.arc-partial-left.arc-78:before {
+    transform: skewX(-12deg);
+}
+.arc-partial-left.arc-79 {
+    transform: rotate(-45deg) skewX(11deg);
+}
+.arc-partial-left.arc-79:before {
+    transform: skewX(-11deg);
+}
+.arc-partial-left.arc-80 {
+    transform: rotate(-45deg) skewX(10deg);
+}
+.arc-partial-left.arc-80:before {
+    transform: skewX(-10deg);
+}
+.arc-partial-left.arc-81 {
+    transform: rotate(-45deg) skewX(9deg);
+}
+.arc-partial-left.arc-81:before {
+    transform: skewX(-9deg);
+}
+.arc-partial-left.arc-82 {
+    transform: rotate(-45deg) skewX(8deg);
+}
+.arc-partial-left.arc-82:before {
+    transform: skewX(-8deg);
+}
+.arc-partial-left.arc-83 {
+    transform: rotate(-45deg) skewX(7deg);
+}
+.arc-partial-left.arc-83:before {
+    transform: skewX(-7deg);
+}
+.arc-partial-left.arc-84 {
+    transform: rotate(-45deg) skewX(6deg);
+}
+.arc-partial-left.arc-84:before {
+    transform: skewX(-6deg);
+}
+.arc-partial-left.arc-85 {
+    transform: rotate(-45deg) skewX(5deg);
+}
+.arc-partial-left.arc-85:before {
+    transform: skewX(-5deg);
+}
+.arc-partial-left.arc-86 {
+    transform: rotate(-45deg) skewX(4deg);
+}
+.arc-partial-left.arc-86:before {
+    transform: skewX(-4deg);
+}
+.arc-partial-left.arc-87 {
+    transform: rotate(-45deg) skewX(3deg);
+}
+.arc-partial-left.arc-87:before {
+    transform: skewX(-3deg);
+}
+.arc-partial-left.arc-88 {
+    transform: rotate(-45deg) skewX(2deg);
+}
+.arc-partial-left.arc-88:before {
+    transform: skewX(-2deg);
+}
+.arc-partial-left.arc-89 {
+    transform: rotate(-45deg) skewX(1deg);
+}
+.arc-partial-left.arc-89:before {
+    transform: skewX(-1deg);
+}
+.arc-partial-left.arc-90 {
+    transform: rotate(-45deg) skewX(0deg);
+}
+.arc-partial-left.arc-90:before {
+    transform: skewX(0deg);
+}
+
+
+
+.arc-partial-right.arc-0 {
+    transform: rotate(45deg) skewX(90deg);
+}
+.arc-partial-right.arc-0:before {
+    transform: skewX(-90deg);
+}
+.arc-partial-right.arc-1 {
+    transform: rotate(45deg) skewX(89deg);
+}
+.arc-partial-right.arc-1:before {
+    transform: skewX(-89deg);
+}
+.arc-partial-right.arc-2 {
+    transform: rotate(45deg) skewX(88deg);
+}
+.arc-partial-right.arc-2:before {
+    transform: skewX(-88deg);
+}
+.arc-partial-right.arc-3 {
+    transform: rotate(45deg) skewX(87deg);
+}
+.arc-partial-right.arc-3:before {
+    transform: skewX(-87deg);
+}
+.arc-partial-right.arc-4 {
+    transform: rotate(45deg) skewX(86deg);
+}
+.arc-partial-right.arc-4:before {
+    transform: skewX(-86deg);
+}
+.arc-partial-right.arc-5 {
+    transform: rotate(45deg) skewX(85deg);
+}
+.arc-partial-right.arc-5:before {
+    transform: skewX(-85deg);
+}
+.arc-partial-right.arc-6 {
+    transform: rotate(45deg) skewX(84deg);
+}
+.arc-partial-right.arc-6:before {
+    transform: skewX(-84deg);
+}
+.arc-partial-right.arc-7 {
+    transform: rotate(45deg) skewX(83deg);
+}
+.arc-partial-right.arc-7:before {
+    transform: skewX(-83deg);
+}
+.arc-partial-right.arc-8 {
+    transform: rotate(45deg) skewX(82deg);
+}
+.arc-partial-right.arc-8:before {
+    transform: skewX(-82deg);
+}
+.arc-partial-right.arc-9 {
+    transform: rotate(45deg) skewX(81deg);
+}
+.arc-partial-right.arc-9:before {
+    transform: skewX(-81deg);
+}
+.arc-partial-right.arc-10 {
+    transform: rotate(45deg) skewX(80deg);
+}
+.arc-partial-right.arc-10:before {
+    transform: skewX(-80deg);
+}
+.arc-partial-right.arc-11 {
+    transform: rotate(45deg) skewX(79deg);
+}
+.arc-partial-right.arc-11:before {
+    transform: skewX(-79deg);
+}
+.arc-partial-right.arc-12 {
+    transform: rotate(45deg) skewX(78deg);
+}
+.arc-partial-right.arc-12:before {
+    transform: skewX(-78deg);
+}
+.arc-partial-right.arc-13 {
+    transform: rotate(45deg) skewX(77deg);
+}
+.arc-partial-right.arc-13:before {
+    transform: skewX(-77deg);
+}
+.arc-partial-right.arc-14 {
+    transform: rotate(45deg) skewX(76deg);
+}
+.arc-partial-right.arc-14:before {
+    transform: skewX(-76deg);
+}
+.arc-partial-right.arc-15 {
+    transform: rotate(45deg) skewX(75deg);
+}
+.arc-partial-right.arc-15:before {
+    transform: skewX(-75deg);
+}
+.arc-partial-right.arc-16 {
+    transform: rotate(45deg) skewX(74deg);
+}
+.arc-partial-right.arc-16:before {
+    transform: skewX(-74deg);
+}
+.arc-partial-right.arc-17 {
+    transform: rotate(45deg) skewX(73deg);
+}
+.arc-partial-right.arc-17:before {
+    transform: skewX(-73deg);
+}
+.arc-partial-right.arc-18 {
+    transform: rotate(45deg) skewX(72deg);
+}
+.arc-partial-right.arc-18:before {
+    transform: skewX(-72deg);
+}
+.arc-partial-right.arc-19 {
+    transform: rotate(45deg) skewX(71deg);
+}
+.arc-partial-right.arc-19:before {
+    transform: skewX(-71deg);
+}
+.arc-partial-right.arc-20 {
+    transform: rotate(45deg) skewX(70deg);
+}
+.arc-partial-right.arc-20:before {
+    transform: skewX(-70deg);
+}
+.arc-partial-right.arc-21 {
+    transform: rotate(45deg) skewX(69deg);
+}
+.arc-partial-right.arc-21:before {
+    transform: skewX(-69deg);
+}
+.arc-partial-right.arc-22 {
+    transform: rotate(45deg) skewX(68deg);
+}
+.arc-partial-right.arc-22:before {
+    transform: skewX(-68deg);
+}
+.arc-partial-right.arc-23 {
+    transform: rotate(45deg) skewX(67deg);
+}
+.arc-partial-right.arc-23:before {
+    transform: skewX(-67deg);
+}
+.arc-partial-right.arc-24 {
+    transform: rotate(45deg) skewX(66deg);
+}
+.arc-partial-right.arc-24:before {
+    transform: skewX(-66deg);
+}
+.arc-partial-right.arc-25 {
+    transform: rotate(45deg) skewX(65deg);
+}
+.arc-partial-right.arc-25:before {
+    transform: skewX(-65deg);
+}
+.arc-partial-right.arc-26 {
+    transform: rotate(45deg) skewX(64deg);
+}
+.arc-partial-right.arc-26:before {
+    transform: skewX(-64deg);
+}
+.arc-partial-right.arc-27 {
+    transform: rotate(45deg) skewX(63deg);
+}
+.arc-partial-right.arc-27:before {
+    transform: skewX(-63deg);
+}
+.arc-partial-right.arc-28 {
+    transform: rotate(45deg) skewX(62deg);
+}
+.arc-partial-right.arc-28:before {
+    transform: skewX(-62deg);
+}
+.arc-partial-right.arc-29 {
+    transform: rotate(45deg) skewX(61deg);
+}
+.arc-partial-right.arc-29:before {
+    transform: skewX(-61deg);
+}
+.arc-partial-right.arc-30 {
+    transform: rotate(45deg) skewX(60deg);
+}
+.arc-partial-right.arc-30:before {
+    transform: skewX(-60deg);
+}
+.arc-partial-right.arc-31 {
+    transform: rotate(45deg) skewX(59deg);
+}
+.arc-partial-right.arc-31:before {
+    transform: skewX(-59deg);
+}
+.arc-partial-right.arc-32 {
+    transform: rotate(45deg) skewX(58deg);
+}
+.arc-partial-right.arc-32:before {
+    transform: skewX(-58deg);
+}
+.arc-partial-right.arc-33 {
+    transform: rotate(45deg) skewX(57deg);
+}
+.arc-partial-right.arc-33:before {
+    transform: skewX(-57deg);
+}
+.arc-partial-right.arc-34 {
+    transform: rotate(45deg) skewX(56deg);
+}
+.arc-partial-right.arc-34:before {
+    transform: skewX(-56deg);
+}
+.arc-partial-right.arc-35 {
+    transform: rotate(45deg) skewX(55deg);
+}
+.arc-partial-right.arc-35:before {
+    transform: skewX(-55deg);
+}
+.arc-partial-right.arc-36 {
+    transform: rotate(45deg) skewX(54deg);
+}
+.arc-partial-right.arc-36:before {
+    transform: skewX(-54deg);
+}
+.arc-partial-right.arc-37 {
+    transform: rotate(45deg) skewX(53deg);
+}
+.arc-partial-right.arc-37:before {
+    transform: skewX(-53deg);
+}
+.arc-partial-right.arc-38 {
+    transform: rotate(45deg) skewX(52deg);
+}
+.arc-partial-right.arc-38:before {
+    transform: skewX(-52deg);
+}
+.arc-partial-right.arc-39 {
+    transform: rotate(45deg) skewX(51deg);
+}
+.arc-partial-right.arc-39:before {
+    transform: skewX(-51deg);
+}
+.arc-partial-right.arc-40 {
+    transform: rotate(45deg) skewX(50deg);
+}
+.arc-partial-right.arc-40:before {
+    transform: skewX(-50deg);
+}
+.arc-partial-right.arc-41 {
+    transform: rotate(45deg) skewX(49deg);
+}
+.arc-partial-right.arc-41:before {
+    transform: skewX(-49deg);
+}
+.arc-partial-right.arc-42 {
+    transform: rotate(45deg) skewX(48deg);
+}
+.arc-partial-right.arc-42:before {
+    transform: skewX(-48deg);
+}
+.arc-partial-right.arc-43 {
+    transform: rotate(45deg) skewX(47deg);
+}
+.arc-partial-right.arc-43:before {
+    transform: skewX(-47deg);
+}
+.arc-partial-right.arc-44 {
+    transform: rotate(45deg) skewX(46deg);
+}
+.arc-partial-right.arc-44:before {
+    transform: skewX(-46deg);
+}
+.arc-partial-right.arc-45 {
+    transform: rotate(45deg) skewX(45deg);
+}
+.arc-partial-right.arc-45:before {
+    transform: skewX(-45deg);
+}
+.arc-partial-right.arc-46 {
+    transform: rotate(45deg) skewX(44deg);
+}
+.arc-partial-right.arc-46:before {
+    transform: skewX(-44deg);
+}
+.arc-partial-right.arc-47 {
+    transform: rotate(45deg) skewX(43deg);
+}
+.arc-partial-right.arc-47:before {
+    transform: skewX(-43deg);
+}
+.arc-partial-right.arc-48 {
+    transform: rotate(45deg) skewX(42deg);
+}
+.arc-partial-right.arc-48:before {
+    transform: skewX(-42deg);
+}
+.arc-partial-right.arc-49 {
+    transform: rotate(45deg) skewX(41deg);
+}
+.arc-partial-right.arc-49:before {
+    transform: skewX(-41deg);
+}
+.arc-partial-right.arc-50 {
+    transform: rotate(45deg) skewX(40deg);
+}
+.arc-partial-right.arc-50:before {
+    transform: skewX(-40deg);
+}
+.arc-partial-right.arc-51 {
+    transform: rotate(45deg) skewX(39deg);
+}
+.arc-partial-right.arc-51:before {
+    transform: skewX(-39deg);
+}
+.arc-partial-right.arc-52 {
+    transform: rotate(45deg) skewX(38deg);
+}
+.arc-partial-right.arc-52:before {
+    transform: skewX(-38deg);
+}
+.arc-partial-right.arc-53 {
+    transform: rotate(45deg) skewX(37deg);
+}
+.arc-partial-right.arc-53:before {
+    transform: skewX(-37deg);
+}
+.arc-partial-right.arc-54 {
+    transform: rotate(45deg) skewX(36deg);
+}
+.arc-partial-right.arc-54:before {
+    transform: skewX(-36deg);
+}
+.arc-partial-right.arc-55 {
+    transform: rotate(45deg) skewX(35deg);
+}
+.arc-partial-right.arc-55:before {
+    transform: skewX(-35deg);
+}
+.arc-partial-right.arc-56 {
+    transform: rotate(45deg) skewX(34deg);
+}
+.arc-partial-right.arc-56:before {
+    transform: skewX(-34deg);
+}
+.arc-partial-right.arc-57 {
+    transform: rotate(45deg) skewX(33deg);
+}
+.arc-partial-right.arc-57:before {
+    transform: skewX(-33deg);
+}
+.arc-partial-right.arc-58 {
+    transform: rotate(45deg) skewX(32deg);
+}
+.arc-partial-right.arc-58:before {
+    transform: skewX(-32deg);
+}
+.arc-partial-right.arc-59 {
+    transform: rotate(45deg) skewX(31deg);
+}
+.arc-partial-right.arc-59:before {
+    transform: skewX(-31deg);
+}
+.arc-partial-right.arc-60 {
+    transform: rotate(45deg) skewX(30deg);
+}
+.arc-partial-right.arc-60:before {
+    transform: skewX(-30deg);
+}
+.arc-partial-right.arc-61 {
+    transform: rotate(45deg) skewX(29deg);
+}
+.arc-partial-right.arc-61:before {
+    transform: skewX(-29deg);
+}
+.arc-partial-right.arc-62 {
+    transform: rotate(45deg) skewX(28deg);
+}
+.arc-partial-right.arc-62:before {
+    transform: skewX(-28deg);
+}
+.arc-partial-right.arc-63 {
+    transform: rotate(45deg) skewX(27deg);
+}
+.arc-partial-right.arc-63:before {
+    transform: skewX(-27deg);
+}
+.arc-partial-right.arc-64 {
+    transform: rotate(45deg) skewX(26deg);
+}
+.arc-partial-right.arc-64:before {
+    transform: skewX(-26deg);
+}
+.arc-partial-right.arc-65 {
+    transform: rotate(45deg) skewX(25deg);
+}
+.arc-partial-right.arc-65:before {
+    transform: skewX(-25deg);
+}
+.arc-partial-right.arc-66 {
+    transform: rotate(45deg) skewX(24deg);
+}
+.arc-partial-right.arc-66:before {
+    transform: skewX(-24deg);
+}
+.arc-partial-right.arc-67 {
+    transform: rotate(45deg) skewX(23deg);
+}
+.arc-partial-right.arc-67:before {
+    transform: skewX(-23deg);
+}
+.arc-partial-right.arc-68 {
+    transform: rotate(45deg) skewX(22deg);
+}
+.arc-partial-right.arc-68:before {
+    transform: skewX(-22deg);
+}
+.arc-partial-right.arc-69 {
+    transform: rotate(45deg) skewX(21deg);
+}
+.arc-partial-right.arc-69:before {
+    transform: skewX(-21deg);
+}
+.arc-partial-right.arc-70 {
+    transform: rotate(45deg) skewX(20deg);
+}
+.arc-partial-right.arc-70:before {
+    transform: skewX(-20deg);
+}
+.arc-partial-right.arc-71 {
+    transform: rotate(45deg) skewX(19deg);
+}
+.arc-partial-right.arc-71:before {
+    transform: skewX(-19deg);
+}
+.arc-partial-right.arc-72 {
+    transform: rotate(45deg) skewX(18deg);
+}
+.arc-partial-right.arc-72:before {
+    transform: skewX(-18deg);
+}
+.arc-partial-right.arc-73 {
+    transform: rotate(45deg) skewX(17deg);
+}
+.arc-partial-right.arc-73:before {
+    transform: skewX(-17deg);
+}
+.arc-partial-right.arc-74 {
+    transform: rotate(45deg) skewX(16deg);
+}
+.arc-partial-right.arc-74:before {
+    transform: skewX(-16deg);
+}
+.arc-partial-right.arc-75 {
+    transform: rotate(45deg) skewX(15deg);
+}
+.arc-partial-right.arc-75:before {
+    transform: skewX(-15deg);
+}
+.arc-partial-right.arc-76 {
+    transform: rotate(45deg) skewX(14deg);
+}
+.arc-partial-right.arc-76:before {
+    transform: skewX(-14deg);
+}
+.arc-partial-right.arc-77 {
+    transform: rotate(45deg) skewX(13deg);
+}
+.arc-partial-right.arc-77:before {
+    transform: skewX(-13deg);
+}
+.arc-partial-right.arc-78 {
+    transform: rotate(45deg) skewX(12deg);
+}
+.arc-partial-right.arc-78:before {
+    transform: skewX(-12deg);
+}
+.arc-partial-right.arc-79 {
+    transform: rotate(45deg) skewX(11deg);
+}
+.arc-partial-right.arc-79:before {
+    transform: skewX(-11deg);
+}
+.arc-partial-right.arc-80 {
+    transform: rotate(45deg) skewX(10deg);
+}
+.arc-partial-right.arc-80:before {
+    transform: skewX(-10deg);
+}
+.arc-partial-right.arc-81 {
+    transform: rotate(45deg) skewX(9deg);
+}
+.arc-partial-right.arc-81:before {
+    transform: skewX(-9deg);
+}
+.arc-partial-right.arc-82 {
+    transform: rotate(45deg) skewX(8deg);
+}
+.arc-partial-right.arc-82:before {
+    transform: skewX(-8deg);
+}
+.arc-partial-right.arc-83 {
+    transform: rotate(45deg) skewX(7deg);
+}
+.arc-partial-right.arc-83:before {
+    transform: skewX(-7deg);
+}
+.arc-partial-right.arc-84 {
+    transform: rotate(45deg) skewX(6deg);
+}
+.arc-partial-right.arc-84:before {
+    transform: skewX(-6deg);
+}
+.arc-partial-right.arc-85 {
+    transform: rotate(45deg) skewX(5deg);
+}
+.arc-partial-right.arc-85:before {
+    transform: skewX(-5deg);
+}
+.arc-partial-right.arc-86 {
+    transform: rotate(45deg) skewX(4deg);
+}
+.arc-partial-right.arc-86:before {
+    transform: skewX(-4deg);
+}
+.arc-partial-right.arc-87 {
+    transform: rotate(45deg) skewX(3deg);
+}
+.arc-partial-right.arc-87:before {
+    transform: skewX(-3deg);
+}
+.arc-partial-right.arc-88 {
+    transform: rotate(45deg) skewX(2deg);
+}
+.arc-partial-right.arc-88:before {
+    transform: skewX(-2deg);
+}
+.arc-partial-right.arc-89 {
+    transform: rotate(45deg) skewX(1deg);
+}
+.arc-partial-right.arc-89:before {
+    transform: skewX(-1deg);
+}
+.arc-partial-right.arc-90 {
+    transform: rotate(45deg) skewX(0deg);
+}
+.arc-partial-right.arc-90:before {
+    transform: skewX(0deg);
+}
