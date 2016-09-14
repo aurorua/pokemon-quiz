@@ -469,6 +469,7 @@ $(document).ready(function() {
 		// Initialize tooltip placement
 		adjustTooltipPlacement();
 		
+		// Hide highlight circles
 		hideHighlights();
 	}
 	init();
