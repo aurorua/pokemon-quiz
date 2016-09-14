@@ -57,7 +57,7 @@ p {
 a,
 a:focus,
 a:hover {
-	color: rgba(230,255,204,.65);
+	color: rgba(230,255,204,.85);
 }
 svg:not(:root) {
     overflow: hidden;
