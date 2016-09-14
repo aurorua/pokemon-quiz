@@ -4,8 +4,8 @@ $(document).ready(function() {
 	var MAX_HP = 420;
 	var CURRENT_HP = 420;
 	
-	var MAX_CP = 3000;
-	var CURRENT_CP = 0;
+	var MAX_QP = 3000;
+	var CURRENT_QP = 0;
 	var ARC_ANGLE = 1;
 	
 	var FLAG_ACTION = false;
@@ -455,7 +455,7 @@ $(document).ready(function() {
 		$('.counter').hide();
 		
 		// Initialize arc
-		updateCP(10);
+		updateQP(10);
 		
 		// Initialize items
 		$('#item1 .item-count').text("x" + items[0].count);
@@ -514,9 +514,9 @@ $(document).ready(function() {
 		$(".dialog-quit-game").dialog("open");
 	});
 	
-	// Update CP arc
+	// Update QP arc
 	function updateArc() {
-		var percentage = CURRENT_CP / MAX_CP;
+		var percentage = CURRENT_QP / MAX_QP;
 		var skew = Math.floor(180 * percentage);
 		if (skew <= 1) { skew = 2;}
 		
@@ -560,28 +560,28 @@ $(document).ready(function() {
 		});
 	}
 	
-	// Update CP
-	function updateCP(amount) {
-		var previousCP = CURRENT_CP;
-		CURRENT_CP += amount;
+	// Update QP
+	function updateQP(amount) {
+		var previousQP = CURRENT_QP;
+		CURRENT_QP += amount;
 		
 		// error checking
-		if (CURRENT_CP <= 0) {
-			CURRENT_CP = 0;
+		if (CURRENT_QP <= 0) {
+			CURRENT_QP = 0;
 		}
-		if (CURRENT_CP >= MAX_CP) {
-			CURRENT_CP = MAX_CP;
+		if (CURRENT_QP >= MAX_QP) {
+			CURRENT_QP = MAX_QP;
 		}
 		
-		// Animate CP text
-		var step = Math.floor((CURRENT_CP - previousCP) / 10);
+		// Animate QP text
+		var step = Math.floor((CURRENT_QP - previousQP) / 10);
 		var interval = setInterval(function(){
-			previousCP += step;
-			$("#cp").html("<span>CP</span>" + previousCP);
+			previousQP += step;
+			$("#cp").html("<span>QP</span>" + previousQP);
 		}, 80);
 		setTimeout(function(){
 			clearInterval(interval);
-			$("#cp").html("<span>CP</span>" + CURRENT_CP);
+			$("#cp").html("<span>QP</span>" + CURRENT_QP);
 		}, 720);
 		
 		updateArc();
@@ -993,7 +993,7 @@ $(document).ready(function() {
 		return damage;
 	}
 	
-	// Update CP and HP based on answer chosen
+	// Update QP and HP based on answer chosen
 	function updateStats(answer, isCorrect) {
 		var index = order[CURRENT_QNUM-1]-1;
 		if (isCorrect) {
@@ -1001,7 +1001,7 @@ $(document).ready(function() {
 			if (index == 24) { // Pichu
 				reward += (34 * DIFFICULTY);
 			}
-			updateCP(reward);
+			updateQP(reward);
 			NUM_CORRECT += 1;
 			return reward;
 		} else {
@@ -1015,7 +1015,7 @@ $(document).ready(function() {
 		}
 	}
 	
-	// Show CP reward or HP punishment after answer is chosen
+	// Show QP reward or HP punishment after answer is chosen
 	function showReward(element, answer, isCorrect) {
 		var statElement = element.find(".answer-stat");
 		var amount = updateStats(answer, isCorrect);
@@ -1025,7 +1025,7 @@ $(document).ready(function() {
 		
 		if (isCorrect) {
 			element.addClass("correct");
-			statElement.text("+" + amount + " CP");
+			statElement.text("+" + amount + " QP");
 			statElement.css("color","rgb(25,204,230)");
 			statElement.animate({
 				opacity: "1",
