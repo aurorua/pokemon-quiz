@@ -393,10 +393,10 @@ button[disabled] {
     font-size: 2em;
 	
 	background-color: transparent;
-	background-image: -webkit-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 45%, rgba(69,186,177,1) 100%);
-	background-image: -moz-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 45%, rgba(69,186,177,1) 100%);
-	background-image: -o-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 45%, rgba(69,186,177,1) 100%);
-	background-image: linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 45%, rgba(69,186,177,1) 100%);
+	background-image: -webkit-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 35%, rgba(69,186,177,1) 100%);
+	background-image: -moz-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 35%, rgba(69,186,177,1) 100%);
+	background-image: -o-linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 35%, rgba(69,186,177,1) 100%);
+	background-image: linear-gradient(to bottom, transparent 0%, rgba(132,211,171,.85) 35%, rgba(69,186,177,1) 100%);
 	
 	padding-right: 1em;
 	padding-left: 1em;
