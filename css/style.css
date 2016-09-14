@@ -169,10 +169,11 @@ text {
 .counter h1 {
 	font-family: "Exo 2", sans-serif;
     color: rgba(0,51,51,.65);
+    font-size: 2.2em;
 	margin-bottom: .125em;
 }
 .counter p {
-	font-size: 2em;
+	font-size: 1.5em;
     color: rgba(0,51,51,.65);
 }
 .content {
@@ -648,6 +649,12 @@ button[disabled] {
 	}
 	.counter {
 		padding: 6em;
+	}
+	.counter h1 {
+	    font-size: inherit;
+	}
+	.counter p {
+		font-size: 2em;
 	}
 	.content {
 		padding: 4em;
