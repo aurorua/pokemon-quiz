@@ -498,7 +498,7 @@ $(document).ready(function() {
 			$('.counter').fadeIn(800);
 			$('.main').animate({
 				marginTop: "0"
-			}, 1200, "swing", function() {
+			}, 1600, "swing", function() {
 			});
 			$('.navbar-toggle').animate({
 				bottom: "6em"
@@ -802,7 +802,7 @@ $(document).ready(function() {
 	
 	// Display the question.
 	function showQuestion(curQuestion) {
-		$('#question').hide(400);
+		$('#question').delay(400).hide(400);
 		
 		$( "#question" ).promise().done(function() {
 			$('#question').html(curQuestion);
@@ -820,31 +820,45 @@ $(document).ready(function() {
 		
 		// Hide the list of previous answers
 		$( ".answer" ).reverse().each(function( i ) {
-			$( this ).animate({
-				width: "16em"
-				}, 200, function() {
+			$(this).children('p').animate({
+				opacity: "0"
+				}, 400, function() {
+					$(this).text(" ");
 			});
 		});
 		
-		// Shuffle the list of current answers in array.
-		shuffle(curAnswers); //.sort(function() { return 0.5 - Math.random() });
-		
-		// Update and then display the current answers
-		$( ".answer" ).promise().done(function() {
-			for (var i = 0; i < numAnswers; i++) {
-				var parent = "#a" + (i + 1);
-				var textElement = "#a" + (i + 1) + " p";
-				$(textElement).text(curAnswers[i].answer);
-				$(parent).attr("title",curAnswers[i].answer);
-			}
-
-			$( ".answer" ).each(function( i ) {
-				$( this ).animate({
-					width: '100%'
-					}, 600, function() {
+		setTimeout(function() {
+			$(".answer").animate({
+				width: "16em"
+				}, 400, function() {
+			});
+			
+			// Shuffle the list of current answers in array.
+			shuffle(curAnswers); //.sort(function() { return 0.5 - Math.random() });
+			
+			// Update and then display the current answers
+			$( ".answer" ).promise().done(function() {
+				setTimeout(function() {
+					for (var i = 0; i < numAnswers; i++) {
+						var parent = "#a" + (i + 1);
+						var textElement = "#a" + (i + 1) + " p";
+						$(textElement).text(curAnswers[i].answer);
+						$(textElement).animate({
+							opacity: "1"
+							}, 400, function() {
+						});
+						$(parent).attr("title",curAnswers[i].answer);
+					}
+				}, 300);
+				
+				$( ".answer" ).each(function( i ) {
+					$(this).animate({
+						width: '100%'
+						}, 400, function() {
+					});
 				});
 			});
-		});
+		}, 500);
 	}
 	
 	// Grab next question.
