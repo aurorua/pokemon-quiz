@@ -299,9 +299,6 @@ text {
     padding: .25em 0;
     width: calc(100% - 9em);
 }
-.answer:hover p {
-	transition: 200ms;
-}
 .answer-stat {
     position: absolute;
     right: .5em;
