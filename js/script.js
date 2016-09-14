@@ -468,6 +468,8 @@ $(document).ready(function() {
 		
 		// Initialize tooltip placement
 		adjustTooltipPlacement();
+		
+		hideHighlights();
 	}
 	init();
 	
@@ -504,6 +506,7 @@ $(document).ready(function() {
 			$('.navbar-toggle').animate({
 				bottom: "6em"
 			}, 800, "swing", function() {
+				showHighlights();
 				nextQandA();
 			});
 		});
@@ -513,6 +516,20 @@ $(document).ready(function() {
 	$('.close-button').click(function() {
 		$(".dialog-quit-game").dialog("open");
 	});
+	
+	// Hide highlight circles
+	function hideHighlights() {
+		$('.highlight-circle-1').fadeOut(0);
+		$('.highlight-circle-2').fadeOut(0);
+		$('.highlight-circle-3').fadeOut(0);
+	}
+	
+	// Show highlight circles
+	function showHighlights() {
+		$('.highlight-circle-1').delay(600).fadeIn(600);
+		$('.highlight-circle-2').delay(800).fadeIn(800);
+		$('.highlight-circle-3').delay(1000).fadeIn(800);
+	}
 	
 	// Update QP arc
 	function updateArc() {

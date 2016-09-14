@@ -106,15 +106,35 @@ text {
 }
 
 /* Background */
-.highlight-circle {
-	display: none;
+.highlight-circle-1 {
 	position: absolute;
-	background-image: linear-gradient(to right, transparent 0%, rgba(139,255,127,.85) 100%);
-	top: 12em;
-	left: 8em;
-	width: 12em;
-	height: 12em;
+	background: rgba(204,255,192,.35);
+	top: 10em;
+	left: 2em;
+	width: 20em;
+	height: 20em;
 	border-radius: 12em;
+	z-index: -1;
+}
+.highlight-circle-2 {
+	position: absolute;
+	background: rgba(204,255,192,.35);
+	top: 18em;
+	right: 2em;
+	width: 16em;
+	height: 16em;
+	border-radius: 16em;
+	z-index: -1;
+}
+.highlight-circle-3 {
+	position: absolute;
+	background: rgba(204,255,192,.35);
+	top: 16em;
+	right: 14em;
+	width: 8em;
+	height: 8em;
+	border-radius: 8em;
+	z-index: -1;
 }
 
 /* Start and Finish */
@@ -159,7 +179,9 @@ text {
 
 /* Card */
 .main {
+	position: relative;
 	margin-top: 150vh;
+	max-width: 60em;
 }
 .counter {
 	position: absolute;
@@ -272,7 +294,7 @@ text {
 	padding-right: 2em;
 	border-radius: 4.5em .5em .5em 4.5em;
 	margin: 1em 0;
-	height: 5em;
+	max-height: 5em;
 	
 	opacity: 1;
 }
