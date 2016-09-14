@@ -302,6 +302,7 @@ $(document).ready(function() {
 						if (hasItem) {
 							if (CURRENT_HP < MAX_HP) {
 								$(".ui-dialog-buttonpane button:contains('Yes')").button("enable");
+								$(".ui-dialog-buttonpane button:contains('Yes')").blur();
 							} else {
 								$('.alert-info').html('<p><b>Info! </b>Your HP is full. You cannot use potions at max HP.</p>');
 								$('.alert-info').show(200);
