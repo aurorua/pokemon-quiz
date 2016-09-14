@@ -245,6 +245,11 @@ $(document).ready(function() {
 		}
 	});
 	
+	// On window resize
+	$(window).resize(function() {
+		adjustTooltipPlacement();
+	});
+	
 	// Shuffle elements in array
 	function shuffle(array) {
 		var currentIndex = array.length, temporaryValue, randomIndex;
@@ -459,6 +464,9 @@ $(document).ready(function() {
 		
 		// Initialize alerts
 		$('.alert-info').hide(200);
+		
+		// Initialize tooltip placement
+		adjustTooltipPlacement();
 	}
 	init();
 	
@@ -766,18 +774,10 @@ $(document).ready(function() {
 			
 			$('#header1').text(name);
 			$('#data1').text(min + "-" + max);
-			
-			// Adjust placement of tooltip based on window width
-			if (window.innerWidth <= 544) {
-				$('#img1').data('bs.tooltip').options.placement = 'top';
-				$('#img2').data('bs.tooltip').options.placement = 'top';
-			} else {
-				$('#img1').data('bs.tooltip').options.placement = 'right';
-				$('#img2').data('bs.tooltip').options.placement = 'left';
-			}
 		}
 	}
 	
+	// On tooltip hover
 	$('.card-img').hover(function() {
 		if ($(this).attr("alt") == "Pichu") {
 			var min = Math.round(18 * DIFFICULTY);
@@ -788,6 +788,17 @@ $(document).ready(function() {
 			showImageTooltip();
 		}
 	});
+	
+	// Adjust placement of tooltip based on window width
+	function adjustTooltipPlacement() {	
+		if (window.innerWidth <= 544) {
+			$('#img1').data('bs.tooltip').options.placement = 'top';
+			$('#img2').data('bs.tooltip').options.placement = 'top';
+		} else {
+			$('#img1').data('bs.tooltip').options.placement = 'right';
+			$('#img2').data('bs.tooltip').options.placement = 'left';
+		}
+	}
 	
 	// Display the question.
 	function showQuestion(curQuestion) {
