@@ -42,7 +42,7 @@ h2>span {
 	margin-right: .1em;
 }
 h3 {
-    font-size: 2.7em;
+    font-size: 2.2em;
 	line-height: 1.35em;
     margin-top: .5em;
 	margin-bottom: 1em;
@@ -636,6 +636,9 @@ button[disabled] {
 @media (min-width: 544px) {
 	body {
 		font-size: 1em;
+	}
+	h3 {
+    		font-size: 2.7em;
 	}
 	.navbar-toggle {
 		right: 6em;
