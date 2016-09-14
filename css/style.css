@@ -224,7 +224,7 @@ text {
 }
 .card-img.x-large,
 .card-img-offset.x-large {
-	bottom: 92.5%;
+	bottom: 90%;
     width: 60%;
 }
 .bar {
@@ -587,7 +587,7 @@ button[disabled] {
 	margin-left: -2em;
 }
 .tooltip.top {
-	margin-top: -6em;
+	margin-top: -4em;
 }
 .tooltip.right .tooltip-inner,
 .tooltip.left .tooltip-inner,
