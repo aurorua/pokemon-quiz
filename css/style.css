@@ -427,7 +427,7 @@ button[disabled] {
 }
 .navbar-toggle {
     position: absolute;
-    right: 6em;
+    right: 1em;
 	bottom: -100vh;
 	
     padding: 0;
@@ -636,6 +636,9 @@ button[disabled] {
 @media (min-width: 544px) {
 	body {
 		font-size: 1em;
+	}
+	.navbar-toggle {
+		right: 6em;
 	}
 }
 
