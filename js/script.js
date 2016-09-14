@@ -815,15 +815,12 @@ $(document).ready(function() {
 	function showAnswers(curAnswers) {
 		var numAnswers = curAnswers.length;
 		
-		// Simple jquery reverse function
-		jQuery.fn.reverse = [].reverse;
-		
 		// Hide the list of previous answers
-		$( ".answer" ).reverse().each(function( i ) {
-			$(this).children('p').animate({
+		$( ".answer" ).children('p').each(function( i ) {
+			$(this).animate({
 				opacity: "0"
-				}, 400, function() {
-					$(this).text(" ");
+			}, 400, function() {
+				$(this).text(" ");
 			});
 		});
 		
