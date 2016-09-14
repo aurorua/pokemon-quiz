@@ -164,7 +164,7 @@ text {
 	text-align: right;
 	
     margin: auto;
-    padding: 6em;
+    padding: 6em 1em;
 }
 .counter h1 {
 	font-family: "Exo 2", sans-serif;
@@ -639,6 +639,9 @@ button[disabled] {
 	}
 	.navbar-toggle {
 		right: 6em;
+	}
+	.counter {
+		padding: 6em;
 	}
 }
 
