@@ -293,9 +293,9 @@ text {
     display: inline-block;
 	vertical-align: middle;
 	
-    text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    overflow-x: auto;
 	
 	width: calc(100% - 10em);
     max-width: 24em;
@@ -668,6 +668,10 @@ button[disabled] {
 	.card-img-offset.x-large {
 		bottom: 87.5%;
 	    width: 60%;
+	}
+	.answer p {
+		text-overflow: ellipsis;
+	    overflow-x: hidden;
 	}
 }
 
