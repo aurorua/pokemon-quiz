@@ -357,6 +357,9 @@ $(document).ready(function() {
 					//var outerWidth = window.outerWidth;
 					//var padding = outerWidth - innerWidth;
 					
+					//$('.centered').css("left", "calc(50% - " + padding + "px)!important");
+					//$('.navbar-toggle').css("padding-right", padding + "px");
+					
 					$(this).dialog( 'option', 'hide', { effect: "fade", duration: 200 } );
 					$(this).dialog({ beforeClose: function() {
 						$('.ui-widget-overlay:first')
@@ -367,20 +370,11 @@ $(document).ready(function() {
 							$(this).remove(); 
 						});
 					}});
-					//$('.centered').css("left", "calc(50% - " + padding + "px)!important");
-					$('.main').animate({
-						marginTop: "150vh"
-					}, 1200, "swing", function() {
-						location.reload();
-					});
 					
-					$('.counter').fadeOut(800);
+					// Hide all HUD elements
+					hideAll();
 					
-					//$('.navbar-toggle').css("padding-right", padding + "px");
-					$('.navbar-toggle').animate({
-						bottom: "-100vh"
-					}, 800, "swing", function() {
-					});
+					// Close dialog box
 					$(this).dialog( "close" );
 				},
 				Cancel: function() {
@@ -519,6 +513,25 @@ $(document).ready(function() {
 	$('.close-button').click(function() {
 		$(".dialog-quit-game").dialog("open");
 	});
+	
+	// Hide all HUD elements
+	function hideAll() {
+		$('.counter').animate({
+			top: "-18em"
+		}, 600, "swing", function() {
+		});
+		
+		$('.main').animate({
+			marginTop: "150vh"
+		}, 1200, "swing", function() {
+			location.reload();
+		});
+		
+		$('.navbar-toggle').animate({
+			bottom: "-100vh"
+		}, 800, "swing", function() {
+		});
+	}
 	
 	// Hide highlight circles
 	function hideHighlights() {
