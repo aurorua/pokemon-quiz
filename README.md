@@ -9,7 +9,7 @@ No installation required!
 
 Currently, there are a total of 25 Quiz questions - one question per Pokemon from Gen I (126 more to go!).
 
-Answer each question correctly to receive <b>Quiz Points (QP)</b>! But if you answer incorrectly, you take damage from the Pokemon in question! Use <b>Potions</b> to heal your <b>Hit Points (HP)</b>! <i>You can hover over or tap on the Pokemon to reveal how much damage it will deal, if you answer incorrectly.<i>
+Answer each question correctly to receive <b>Quiz Points (QP)</b>! But if you answer incorrectly, you take damage from the Pokemon in question! Use <b>Potions</b> to heal your <b>Hit Points (HP)</b>! <i>You can hover over or tap on the Pokemon to reveal how much damage it will deal, if you answer incorrectly.</i>
 
 Once you complete the Quiz, you will earn a <b>medal</b> based on how many questions you answered correctly!
 
