@@ -267,6 +267,7 @@ text {
 	padding-right: 2em;
 	border-radius: 4.5em .5em .5em 4.5em;
 	margin: 1em 0;
+	max-height: 5em;
 	
 	opacity: 1;
 }
@@ -291,15 +292,14 @@ text {
 }
 .answer p {
     display: inline-block;
-	vertical-align: middle;
-	
-    white-space: nowrap;
+    vertical-align: middle;
     overflow: hidden;
-    overflow-x: auto;
-	
-	width: calc(100% - 10em);
-    max-width: 24em;
-	transition: 200ms;
+    
+    line-height: 1.2em;
+    padding: .25em 0;
+    width: calc(100% - 9em);
+    
+    transition: 200ms;
 }
 .answer:hover p {
 	transition: 200ms;
