@@ -129,8 +129,8 @@ text {
 .highlight-circle-3 {
 	position: absolute;
 	background: rgba(204,255,192,.35);
-	top: 16em;
-	right: 14em;
+	top: 14em;
+	right: 10em;
 	width: 8em;
 	height: 8em;
 	border-radius: 8em;
