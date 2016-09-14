@@ -524,7 +524,7 @@ button[disabled] {
 /* Footer Styles */
 .footer {
 	float: none;
-	padding: 2em 4em 4em;
+	padding: 2em 4em 3.75em;
 }
 .footer p {
 	color: white;
