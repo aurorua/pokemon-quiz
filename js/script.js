@@ -24,9 +24,9 @@ $(document).ready(function() {
 	//		Tier n - (Total stat of n)/(Total stat of base}%
 	var questions = [
 		{name: "Bulbasaur", question: "What does Bulbasaur store in the bulb on its back?", size: "small", minDamage: 36, maxDamage: 52},
-		{name: "Ivysaur", question: "Ivysaur is ready to evolve when its flower bud _____.", size: "medium", minDamage: 61, maxDamage: 84},
+		{name: "Ivysaur", question: 'Ivysaur is ready to evolve when its flower bud <span class="fill-in-blank">          </span>.', size: "medium", minDamage: 61, maxDamage: 84},
 		{name: "Venusaur", question: "Which of the following physical characteristics DO NOT change between Venusaur and its pre-evolved forms?", size: "x-large", minDamage: 112, maxDamage: 142},
-		{name: "Charmander", question: "The flame on the tip of Charmander's tail DOES NOT indicate _____.", size: "small", minDamage: 43, maxDamage: 51},
+		{name: "Charmander", question: 'The flame on the tip of Charmander\'s tail DOES NOT indicate <span class="fill-in-blank">          </span>.', size: "small", minDamage: 43, maxDamage: 51},
 		{name: "Charmeleon", question: "Charmeleon actively seeks out strong opponents to fight. In this excited state, what color does its tail burn?", size: "medium", minDamage: 67, maxDamage: 88},
 		{name: "Charizard", question: "Charizard is a dual-type _____ Pokemon.", size: "x-large", minDamage: 115, maxDamage: 158},
 		{name: "Squirtle", question: "Ash's Squirtle was the leader of the <i>Squirtle Squad</i>. Each member of the squad _____.", size: "small", minDamage: 42, maxDamage: 44},
