@@ -218,7 +218,7 @@ text {
 }
 .card-img.x-large,
 .card-img-offset.x-large {
-	bottom: 87.5%;
+	bottom: 92.5%;
     width: 60%;
 }
 .bar {
@@ -651,6 +651,11 @@ button[disabled] {
 	}
 	.content {
 		padding: 4em;
+	}
+	.card-img.x-large,
+	.card-img-offset.x-large {
+		bottom: 87.5%;
+	    width: 60%;
 	}
 }
 
