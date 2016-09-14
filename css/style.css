@@ -58,6 +58,7 @@ a,
 a:focus,
 a:hover {
 	color: rgba(230,255,192,1);
+	text-decoration: none;
 }
 svg:not(:root) {
 	overflow: hidden;
