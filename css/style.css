@@ -54,6 +54,11 @@ p {
 	
 	margin: 0;
 }
+a,
+a:focus,
+a:hover {
+	color: rgba(230,255,204,.65);
+}
 svg:not(:root) {
     overflow: hidden;
     margin-bottom: -0.25em;
