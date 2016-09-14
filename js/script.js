@@ -516,17 +516,26 @@ $(document).ready(function() {
 	
 	// Hide all HUD elements
 	function hideAll() {
+		// Hide counter
 		$('.counter').animate({
 			top: "-18em"
 		}, 600, "swing", function() {
 		});
 		
-		$('.main').animate({
-			marginTop: "150vh"
-		}, 1200, "swing", function() {
-			location.reload();
+		// Hide highlight
+		$('.highlight').animate({
+			opacity: "0"
+		}, 200, "swing", function() {
+			// Slide away main content
+			$('.main').animate({
+				marginTop: "150vh"
+			}, 1200, "swing", function() {
+				location.reload();
+			});
 		});
 		
+		// Hide nav button and menu
+		$('.collapse').collapse('hide');
 		$('.navbar-toggle').animate({
 			bottom: "-100vh"
 		}, 800, "swing", function() {

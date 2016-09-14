@@ -106,35 +106,33 @@ text {
 }
 
 /* Background */
-.highlight-circle-1 {
+.highlight {
 	position: absolute;
+	z-index: -1;
+}
+.highlight-circle-1 {
 	background: rgba(204,255,192,.35);
 	top: 10em;
 	left: 2em;
 	width: 20em;
 	height: 20em;
 	border-radius: 12em;
-	z-index: -1;
 }
 .highlight-circle-2 {
-	position: absolute;
 	background: rgba(204,255,192,.35);
 	top: 18em;
 	right: 2em;
 	width: 16em;
 	height: 16em;
 	border-radius: 16em;
-	z-index: -1;
 }
 .highlight-circle-3 {
-	position: absolute;
 	background: rgba(204,255,192,.35);
 	top: 14em;
 	right: 10em;
 	width: 8em;
 	height: 8em;
 	border-radius: 8em;
-	z-index: -1;
 }
 
 /* Start and Finish */
