@@ -256,8 +256,8 @@ text {
 }
 .answers-wrapper {
 	position: relative;
-    padding: 3em 0 1.5em 0;
-	min-height: 29.5em;
+    padding: 1.5em 0 1.5em 0;
+	min-height: 28em;
 	overflow-x: hidden;
 }
 .answer {
@@ -666,6 +666,10 @@ button[disabled] {
 	.card-img-offset.x-large {
 		bottom: 87.5%;
 	    width: 60%;
+	}
+	.answers-wrapper {
+	    padding: 3em 0 1.5em 0;
+		min-height: 29.5em;
 	}
 	.answer p {
 		text-overflow: ellipsis;
