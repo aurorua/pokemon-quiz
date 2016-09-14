@@ -502,7 +502,7 @@ button[disabled] {
 }
 .navbar-nav {
     padding-top: 9.5em;
-    padding-bottom: 10.5em;
+    padding-bottom: 9.5em;
 }
 .item-ripple-1 {
 	display: none;
@@ -643,6 +643,9 @@ button[disabled] {
 	}
 	.navbar-toggle {
 		right: 6em;
+	}
+	.navbar-nav {
+	    padding-bottom: 10.5em;
 	}
 	.navbar-default .navbar-nav>li>a {
 	    padding: .85em 3.25em;
