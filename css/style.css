@@ -185,7 +185,7 @@ text {
 }
 .counter {
 	position: absolute;
-	top: 0;
+	top: -18em;
 	right: 0;
 	
 	color: rgba(0,51,51,.5);

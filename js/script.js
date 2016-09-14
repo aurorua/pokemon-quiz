@@ -452,7 +452,6 @@ $(document).ready(function() {
 		});
 		$('.main, footer').fadeOut(200);
 		$('.results').fadeOut();
-		$('.counter').hide();
 		
 		// Initialize arc
 		updateQP(10);
@@ -499,7 +498,10 @@ $(document).ready(function() {
 		});
 		$('.title-wrapper').promise().done(function() {
 			$('body').css("overflow-y","scroll");
-			$('.counter').fadeIn(800);
+			$('.counter').animate({
+				top: "0"
+			}, 600, "swing", function() {
+			});
 			$('.main').animate({
 				marginTop: "0"
 			}, 1600, "swing", function() {
