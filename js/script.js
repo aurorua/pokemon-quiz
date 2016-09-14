@@ -747,18 +747,18 @@ $(document).ready(function() {
 					$('#img2').addClass("x-small");
 					$('#img2').addClass("card-img-left");
 					$('#img2').attr({"src": "img/172.png", "alt": "Pichu"});
-					$('#img2').fadeIn(400);
+					$('#img2').delay(200).fadeIn(400);
 				}
 					
 				$('#img1').attr({"src": imgSrc, "alt": questions[index].name});
-				$('#img1').fadeIn(400);
+				$('#img1').delay(200).fadeIn(400);
 			} else {
 				$('.card-img').addClass("medium");
 				$('.card-img').tooltip("destroy");
 				$('.card-img').unbind('mouseenter mouseleave');
 			
 				$('#img1').attr({"src": imgSrc});
-				$('#img1').fadeIn(400);
+				$('#img1').delay(200).fadeIn(400);
 			}
 		});
 	}
