@@ -656,7 +656,7 @@ button[disabled] {
 		padding: 6em;
 	}
 	.counter h1 {
-	    font-size: inherit;
+	    font-size: 3.6em;
 	}
 	.counter p {
 		font-size: 2em;
