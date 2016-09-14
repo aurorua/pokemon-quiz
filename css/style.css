@@ -433,7 +433,7 @@ button[disabled] {
 }
 .navbar-toggle {
     position: absolute;
-    right: 1em;
+    right: 1.5em;
 	bottom: -100vh;
 	
     padding: 0;
