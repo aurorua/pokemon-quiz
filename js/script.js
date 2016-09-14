@@ -32,7 +32,7 @@ $(document).ready(function() {
 		{name: "Squirtle", question: 'Ash\'s Squirtle was the leader of the <i>Squirtle Squad</i>. Each member of the squad <span class="fill-in-blank">          </span>.', size: "small", minDamage: 42, maxDamage: 44},
 		{name: "Wartortle", question: "What does Wartortle's fluffy tail symbolize?", size: "medium", minDamage: 74, maxDamage: 76},
 		{name: "Blastoise", question: 'Blastoise has two water cannons in its shell, while Mega Blastoise has <span class="fill-in-blank">          </span> in its <i>shell</i>.', size: "large", minDamage: 130, maxDamage: 133},
-		{name: "Caterpie", question: 'The red antenna on Caterpie\'s head can <span class="fill-in-blank">          </span>.", size: "x-small', minDamage: 10, maxDamage: 20},
+		{name: "Caterpie", question: 'The red antenna on Caterpie\'s head can <span class="fill-in-blank">          </span>.', size: "x-small", minDamage: 10, maxDamage: 20},
 		{name: "Metapod", question: "In the image above, what direction is Metapod facing (from your perspective)?", size: "small", minDamage: 13, maxDamage: 18},
 		{name: "Butterfree", question: 'Ash\'s Butterfree fell in love with a <span class="fill-in-blank">          </span> Butterfree.', size: "medium", minDamage: 35, maxDamage: 127},
 		{name: "Weedle", question: "What Pokemon did Ash choose to help catch his first Weedle?", size: "x-small", minDamage: 8, maxDamage: 23},
