@@ -411,9 +411,6 @@ $(document).ready(function() {
 				var quantity = " You have <b>" + items[0].count + " Potion(s) remaining</b>."
 				$(".item-description").html(items[0].description + quantity);
 				$(".item-img").attr("src","img/pogo-potion.png");
-				/* $(window).on("load", function() {
-					$(".item-img").attr("src","img/pogo-potion.png");
-				}); */
 			} else if (element == "item2") {
 				$(".dialog-item-confirm").attr("id","super-potion");
 				$(".dialog-item-confirm").dialog('option', 'title', 'Use Super Potion?');
@@ -434,7 +431,11 @@ $(document).ready(function() {
 				$(".item-img").attr("src","img/pogo-max-potion.png");
 			}
 			updateHP(0); // load HP in dialog box
-			$(".dialog-item-confirm").dialog("open");
+			
+			// Delay dialog box open to load imgs
+			setTimeout(function() {
+				$(".dialog-item-confirm").dialog("open");
+			}, 200);
 		}
 	});
 	
