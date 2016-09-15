@@ -245,7 +245,6 @@ text {
 
 /* Card */
 .main {
-	position: relative;
 	margin-top: 150vh;
 	max-width: 60em;
 }
@@ -737,7 +736,7 @@ button:hover[disabled] {
 		font-size: 1em;
 	}
 	h3 {
-    		font-size: 2.7em;
+		font-size: 2.7em;
 	}
 	.counter h1 {
 		font-size: 3.6em;
@@ -747,6 +746,9 @@ button:hover[disabled] {
 	}
 	.content {
 		padding: 4em;
+	}
+	.main {
+		position: relative;
 	}
 	.card-img.x-large,
 	.card-img-offset.x-large {
