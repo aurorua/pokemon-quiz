@@ -106,6 +106,42 @@ text {
 }
 
 /* Background */
+.glow {
+	position: absolute;
+	animation-name: glow;
+	animation-iteration-count: infinite;
+	z-index: -2;
+}
+.glow-1 {
+	top: -10em;
+	left: -18em;
+	width: 60em;
+	height: 60em;
+	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.55) 0%, transparent 50%);
+
+	animation-duration: 30s;
+	animation-delay: 9s;
+}
+.glow-2{
+	top: 2em;
+	right: -14.4em;
+	width: 48em;
+	height: 48em;
+	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.45) 0%, transparent 50%);
+
+	animation-duration: 30s;
+	animation-delay: 18s;
+}
+.glow-3 {
+	top: 6em;
+	right: 2em;
+	width: 24em;
+	height: 24em;
+	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.35) 0%, transparent 50%);
+
+	animation-duration: 30s;
+	animation-delay: 27s;
+}
 .highlight {
 	position: absolute;
 	z-index: -1;
@@ -121,8 +157,8 @@ text {
 	height: 20em;
 	border-radius: 12em;
 
-	animation-duration: 7s;
-    animation-delay: 2s;
+	animation-duration: 30s;
+	animation-delay: 9s;
 }
 .highlight-circle-2 {
 	background: rgba(204,255,192,.35);
@@ -132,8 +168,8 @@ text {
 	height: 16em;
 	border-radius: 16em;
 
-	animation-duration: 8s;
-    animation-delay: 4s;
+	animation-duration: 30s;
+	animation-delay: 18s;
 }
 .highlight-circle-3 {
 	background: rgba(204,255,192,.35);
@@ -143,14 +179,27 @@ text {
 	height: 8em;
 	border-radius: 8em;
 
-	animation-duration: 9s;
-    animation-delay: 6s;
+	animation-duration: 30s;
+	animation-delay: 27s;
 }
 @keyframes fade-in-out {
 	0% { opacity: 1; }
 	10% { opacity: 1; }
 	50% { opacity: 0; }
 	60% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes glow {
+	0% { opacity: 1; }
+	10% { opacity: 0; }
+	20% { opacity: 1; }
+	30% { opacity: 0; }
+	40% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 0; }
+	70% { opacity: 0; }
+	80% { opacity: 1; }
+	90% { opacity: 0; }
 	100% { opacity: 1; }
 }
 
