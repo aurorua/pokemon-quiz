@@ -120,6 +120,9 @@ text {
 	width: 20em;
 	height: 20em;
 	border-radius: 12em;
+
+	animation-duration: 7s;
+    animation-delay: 2s;
 }
 .highlight-circle-2 {
 	background: rgba(204,255,192,.35);
@@ -128,6 +131,9 @@ text {
 	width: 16em;
 	height: 16em;
 	border-radius: 16em;
+
+	animation-duration: 8s;
+    animation-delay: 4s;
 }
 .highlight-circle-3 {
 	background: rgba(204,255,192,.35);
@@ -136,6 +142,16 @@ text {
 	width: 8em;
 	height: 8em;
 	border-radius: 8em;
+
+	animation-duration: 9s;
+    animation-delay: 6s;
+}
+@keyframes fade-in-out {
+	0% { opacity: 1; }
+	10% { opacity: 1; }
+	50% { opacity: 0; }
+	60% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 /* Start and Finish */
