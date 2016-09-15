@@ -524,7 +524,7 @@ $(document).ready(function() {
 		});
 		
 		// Hide highlight
-		$('.highlight').animate({
+		$('.highlight, .glow').animate({
 			opacity: "0"
 		}, 200, "swing", function() {
 			// Slide away main content
@@ -545,16 +545,14 @@ $(document).ready(function() {
 	
 	// Hide highlight circles
 	function hideHighlights() {
-		$('.highlight-circle-1').fadeOut(0);
-		$('.highlight-circle-2').fadeOut(0);
-		$('.highlight-circle-3').fadeOut(0);
+		$('.highlight, .glow').fadeOut(0);
 	}
 	
 	// Show highlight circles
 	function showHighlights() {
-		$('.highlight-circle-1').delay(600).fadeIn(600);
-		$('.highlight-circle-2').delay(800).fadeIn(800);
-		$('.highlight-circle-3').delay(1000).fadeIn(800);
+		$('.highlight-circle-1, .glow-1').delay(600).fadeIn(600);
+		$('.highlight-circle-2, .glow-2').delay(800).fadeIn(800);
+		$('.highlight-circle-3, .glow-3').delay(1000).fadeIn(800);
 	}
 	
 	// Update QP arc
