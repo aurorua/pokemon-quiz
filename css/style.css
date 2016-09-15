@@ -245,8 +245,10 @@ text {
 
 /* Card */
 .main {
+	position: relative;
 	margin-top: 150vh;
 	max-width: 60em;
+	overflow-x: hidden;
 }
 .counter {
 	position: absolute;
@@ -748,7 +750,7 @@ button:hover[disabled] {
 		padding: 4em;
 	}
 	.main {
-		position: relative;
+		overflow-x: auto;
 	}
 	.card-img.x-large,
 	.card-img-offset.x-large {
