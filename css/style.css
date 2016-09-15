@@ -750,7 +750,7 @@ button:hover[disabled] {
 		padding: 4em;
 	}
 	.main {
-		overflow-x: auto;
+		overflow-x: initial;
 	}
 	.card-img.x-large,
 	.card-img-offset.x-large {
