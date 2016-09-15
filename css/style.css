@@ -109,6 +109,9 @@ text {
 .highlight {
 	position: absolute;
 	z-index: -1;
+
+	animation-name: fade-in-out;
+	animation-iteration-count: infinite;
 }
 .highlight-circle-1 {
 	background: rgba(204,255,192,.35);
