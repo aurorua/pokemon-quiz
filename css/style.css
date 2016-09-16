@@ -117,7 +117,7 @@ text {
 	left: -18em;
 	width: 60em;
 	height: 60em;
-	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.55) 0%, transparent 50%);
+	background-image: radial-gradient(circle at 50% 50%, rgba(216,255,204,.65) 0%, transparent 50%);
 
 	animation-duration: 30s;
 	animation-delay: 9s;
@@ -127,7 +127,7 @@ text {
 	right: -14.4em;
 	width: 48em;
 	height: 48em;
-	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.45) 0%, transparent 50%);
+	background-image: radial-gradient(circle at 50% 50%, rgba(216,255,204,.55) 0%, transparent 50%);
 
 	animation-duration: 30s;
 	animation-delay: 18s;
@@ -137,7 +137,7 @@ text {
 	right: 2em;
 	width: 24em;
 	height: 24em;
-	background-image: radial-gradient(circle at 50% 50%, rgba(204,255,192,.35) 0%, transparent 50%);
+	background-image: radial-gradient(circle at 50% 50%, rgba(216,255,204,.45) 0%, transparent 50%);
 
 	animation-duration: 30s;
 	animation-delay: 27s;
@@ -150,7 +150,7 @@ text {
 	animation-iteration-count: infinite;
 }
 .highlight-circle-1 {
-	background: rgba(204,255,192,.35);
+	background: rgba(204,255,192,.55);
 	top: 10em;
 	left: 2em;
 	width: 20em;
@@ -161,7 +161,7 @@ text {
 	animation-delay: 9s;
 }
 .highlight-circle-2 {
-	background: rgba(204,255,192,.35);
+	background: rgba(204,255,192,.55);
 	top: 18em;
 	right: 2em;
 	width: 16em;
@@ -172,7 +172,7 @@ text {
 	animation-delay: 18s;
 }
 .highlight-circle-3 {
-	background: rgba(204,255,192,.35);
+	background: rgba(204,255,192,.55);
 	top: 14em;
 	right: 10em;
 	width: 8em;
