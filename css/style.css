@@ -182,6 +182,10 @@ text {
 	animation-duration: 30s;
 	animation-delay: 27s;
 }
+.highlight-hide {
+	background: transparent;
+	transition: 400ms;
+}
 @keyframes fade-in-out {
 	0% { opacity: 1; }
 	10% { opacity: 1; }

@@ -524,16 +524,15 @@ $(document).ready(function() {
 		});
 		
 		// Hide highlight
-		$('.highlight, .glow').animate({
-			opacity: "0"
-		}, 200, "swing", function() {
+		$('.highlight, .glow').addClass('highlight-hide');
+		setTimeout(function() {
 			// Slide away main content
 			$('.main').animate({
 				marginTop: "150vh"
 			}, 1200, "swing", function() {
 				location.reload();
 			});
-		});
+		}, 400);
 		
 		// Hide nav button and menu
 		$('.collapse').collapse('hide');
