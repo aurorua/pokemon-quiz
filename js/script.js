@@ -188,7 +188,7 @@ $(document).ready(function() {
 	   order.push(i);
 	}
 	shuffle(order);
-	console.log(order);
+	//console.log(order);
 	
 	// Enable tooltips
 	$('[data-toggle="tooltip"]').tooltip();
@@ -283,7 +283,7 @@ $(document).ready(function() {
 			open: function(){
 				$('.ui-widget-overlay').hide().fadeIn(200);
 				if (CURRENT_HP == MAX_HP) {
-					$(".ui-dialog-buttonpane button:contains('Yes')").button("disable");
+					$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").button("disable");
 					$('.alert-info').html('<p><b>Info! </b>Your HP is full. You cannot use potions at max HP.</p>');
 					$('.alert-info').show(200);
 				}
@@ -296,13 +296,13 @@ $(document).ready(function() {
 				"Yes": function() {
 					var element = $(this).attr("id");
 					var hasItem = updateItems(element);
-					$(".ui-dialog-buttonpane button:contains('Yes')").button("disable");
-					$(".ui-dialog-buttonpane button:contains('Cancel')").text('Close');
+					$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").button("disable");
+					$(".ui-dialog .ui-dialog-buttonpane button:contains('Cancel')").text('Close');
 					setTimeout(function(){
 						if (hasItem) {
 							if (CURRENT_HP < MAX_HP) {
-								$(".ui-dialog-buttonpane button:contains('Yes')").button("enable");
-								$(".ui-dialog-buttonpane button:contains('Yes')").blur();
+								$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").button("enable");
+								$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").blur();
 							} else {
 								$('.alert-info').html('<p><b>Info! </b>Your HP is full. You cannot use potions at max HP.</p>');
 								$('.alert-info').show(200);
@@ -344,8 +344,8 @@ $(document).ready(function() {
 			modal: true,
 			open: function(){
 				$('.ui-widget-overlay').hide().fadeIn(200);
-				$(".ui-dialog-buttonpane button:contains('Yes')").button("enable");
-				$(".ui-dialog-buttonpane button:contains('Close')").text('Cancel');
+				$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").button("enable");
+				$(".ui-dialog .ui-dialog-buttonpane button:contains('Close')").text('Cancel');
 			},
 			show: {
 				effect: "fade",
@@ -402,8 +402,8 @@ $(document).ready(function() {
 	$('.item').click(function() {
 		// do the following if the item is not disabled
 		if (!$(this).hasClass("disabled")) {
-			$(".ui-dialog-buttonpane button:contains('Yes')").button("enable");
-			$(".ui-dialog-buttonpane button:contains('Close')").text('Cancel');
+			$(".ui-dialog .ui-dialog-buttonpane button:contains('Yes')").button("enable");
+			$(".ui-dialog .ui-dialog-buttonpane button:contains('Close')").text('Cancel');
 			var element = $(this).attr('id');
 			if (element == "item1") {
 				$(".dialog-item-confirm").attr("id","potion");

@@ -166,7 +166,7 @@
 	right: -5px;
 	top: -5px;
 }
-.ui-button {
+.ui-dialog .ui-dialog-buttonpane button{
 	padding: 1em 2em;
 	display: inline-block;
 	position: relative;
@@ -197,15 +197,33 @@
 	transition: 200ms;
 }
 
-.ui-button:focus,
-.ui-button:hover {
+.ui-dialog .ui-dialog-buttonpane button:focus,
+.ui-dialog .ui-dialog-buttonpane button:hover {
 	background-color: rgb(132,211,171);
     background-image: none;
 	text-decoration: none;
 	outline: none;
 	transition: 200ms;
 }
-.ui-button:active {
+.ui-dialog .ui-dialog-buttonpane button[disabled] {
+	background-color: rgb(69,186,177);
+    background-image: none;
+	color: rgba(255,255,255,.35);
+	text-decoration: none;
+	outline: none;
+	cursor: default;
+	transition: 200ms;
+}
+.ui-dialog .ui-dialog-buttonpane button:focus[disabled],
+.ui-dialog .ui-dialog-buttonpane button:hover[disabled] {
+	background-color: rgb(69,186,177);
+    background-image: none;
+	color: rgba(255,255,255,.35);
+	text-decoration: none;
+	outline: none;
+	transition: 200ms;
+}
+.ui-dialog .ui-dialog-buttonpane button:active {
     box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
 }
 
