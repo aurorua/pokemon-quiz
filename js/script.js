@@ -25,8 +25,8 @@ $(document).ready(function() {
 	var questions = [
 		{name: "Bulbasaur", question: "What does Bulbasaur store in the bulb on its back?", size: "small", minDamage: 36, maxDamage: 52},
 		{name: "Ivysaur", question: 'Ivysaur is ready to evolve when its flower bud <span class="fill-in-blank">          </span>.', size: "medium", minDamage: 61, maxDamage: 84},
-		{name: "Venusaur", question: "Which of the following physical characteristics DO NOT change between Venusaur and its pre-evolved forms?", size: "x-large", minDamage: 112, maxDamage: 142},
-		{name: "Charmander", question: 'The flame on the tip of Charmander\'s tail DOES NOT indicate <span class="fill-in-blank">          </span>.', size: "small", minDamage: 43, maxDamage: 51},
+		{name: "Venusaur", question: "Which of the following physical characteristics <b>DO NOT</b> change between Venusaur and its pre-evolved forms?", size: "x-large", minDamage: 112, maxDamage: 142},
+		{name: "Charmander", question: 'The flame on the tip of Charmander\'s tail <b>DOES NOT</b> indicate <span class="fill-in-blank">          </span>.', size: "small", minDamage: 43, maxDamage: 51},
 		{name: "Charmeleon", question: "Charmeleon actively seeks out strong opponents to fight. In this excited state, what color does its tail burn?", size: "medium", minDamage: 67, maxDamage: 88},
 		{name: "Charizard", question: 'Charizard is a dual-type <span class="fill-in-blank">          </span> Pokemon.', size: "x-large", minDamage: 115, maxDamage: 158},
 		{name: "Squirtle", question: 'Ash\'s Squirtle was the leader of the <i>Squirtle Squad</i>. Each member of the squad <span class="fill-in-blank">          </span>.', size: "small", minDamage: 42, maxDamage: 44},
@@ -40,7 +40,7 @@ $(document).ready(function() {
 		{name: "Beedrill", question: 'Despite having wings, Beedrill is not a Flying type Pokemon but a <span class="fill-in-blank">          </span> type Pokemon.', size: "medium", minDamage: 35, maxDamage: 127},
 		{name: "Pidgey", question: 'Pidgey was originally going to be named <span class="fill-in-blank">          </span>.', size: "small", minDamage: 25, maxDamage: 35},
 		{name: "Pidgeotto", question: "What color changes occur to the feathers of Pidgeotto's head or tail when it evolves?", size: "large", minDamage: 56, maxDamage: 70},
-		{name: "Pidgeot", question: 'Pidgeot DOES NOT have the ability to <span class="fill-in-blank">          </span>.', size: "x-large", minDamage: 115, maxDamage: 134},
+		{name: "Pidgeot", question: 'Pidgeot <b>DOES NOT</b> have the ability to <span class="fill-in-blank">          </span>.', size: "x-large", minDamage: 115, maxDamage: 134},
 		{name: "Rattata", question: "What is the correct pronunciation of Rattata?", size: "small", minDamage: 5, maxDamage: 36},
 		{name: "Raticate", question: "Raticate serves as the sidekick of what Team Rocket duo?", size: "medium", minDamage: 48, maxDamage: 99},
 		{name: "Spearow", question: "What does Ash ride to escape from the angry flock of Spearow in the first episode?", size: "small", minDamage: 12, maxDamage: 41},
@@ -473,14 +473,14 @@ $(document).ready(function() {
 		$(this).unbind('click');
 		$('.ripple-1, .ripple-2').show(0);
 		$('.ripple-1').animate({
-			width: "50em",
-			height: "50em",
+			width: "40em",
+			height: "40em",
 			opacity: 1
 		}, 300, "swing", function() {
 		});
 		$('.ripple-2').animate({
-			width: "75em",
-			height: "75em",
+			width: "60em",
+			height: "60em",
 			opacity: 1
 		}, 600, "swing", function() {
 		});
@@ -617,11 +617,11 @@ $(document).ready(function() {
 		var step = Math.floor((CURRENT_QP - previousQP) / 10);
 		var interval = setInterval(function(){
 			previousQP += step;
-			$("#cp").html("<span>QP</span>" + previousQP);
+			$("#score").html("<span>QP</span>" + previousQP);
 		}, 80);
 		setTimeout(function(){
 			clearInterval(interval);
-			$("#cp").html("<span>QP</span>" + CURRENT_QP);
+			$("#score").html("<span>QP</span>" + CURRENT_QP);
 		}, 720);
 		
 		updateArc();
@@ -635,28 +635,28 @@ $(document).ready(function() {
 		if (percentage <= .25) {
 			$('.bar-fill').css("background-color", "rgb(255,127,127)");
 		} else if (percentage > .25 && percentage <= .50) {
-			$('.bar-fill').css("background-color", "rgb(247,212,61)");
+			$('.bar-fill').css("background-color", "rgb(247,215,94)");
 		} else {
-			$('.bar-fill').css("background-color", "rgb(107,239,182)");
+			$('.bar-fill').css("background-color", "rgb(102,239,175)");
 		}
 		
 		// Animate HP bar
 		$('.bar-fill').css("width", (100*percentage) + "%");
 		if (amount < 0) {
 			$(".bar").animate({
-				backgroundColor: "rgba(255,51,51,.85)"
+				backgroundColor: "rgba(255,47,47,.875)"
 				}, 200, function() {
 					$(".bar").animate({
-						backgroundColor: "rgba(0,51,51,.1)"
+						backgroundColor: "rgba(0,47,47,.125)"
 						}, 400, function() {
 					});
 			});
 		} else if (amount > 0) {
 			$(".bar").animate({
-				backgroundColor: "rgba(51,255,255,.85)"
+				backgroundColor: "rgba(51,255,255,.875)"
 				}, 200, function() {
 					$(".bar").animate({
-						backgroundColor: "rgba(0,51,51,.1)"
+						backgroundColor: "rgba(0,47,47,.125)"
 						}, 800, function() {
 					});
 			});
@@ -848,7 +848,7 @@ $(document).ready(function() {
 		$( "#question" ).promise().done(function() {
 			$('#question').html(curQuestion);
 			$('#question').slideDown(400);
-			$('.counter h1').html(CURRENT_QNUM + " / " + NUM_QUESTIONS);
+			$('.counter-stat').html(CURRENT_QNUM + " / " + NUM_QUESTIONS);
 		});
 	}
 	
@@ -934,9 +934,9 @@ $(document).ready(function() {
 					opacity: "0"
 					}, 400, function() {
 						if (CURRENT_HP > 0) {
-							$('.results h1').text(NUM_CORRECT + " / " + NUM_QUESTIONS);
+							$('.results-stat').text(NUM_CORRECT + " / " + NUM_QUESTIONS);
 						} else {
-							$('.results h1').text(NUM_CORRECT + " / " + (CURRENT_QNUM-1));
+							$('.results-stat').text(NUM_CORRECT + " / " + (CURRENT_QNUM-1));
 						}
 						$('.results').fadeIn(400);
 						$(this).hide();

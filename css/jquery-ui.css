@@ -93,8 +93,8 @@
 	width: 100%;
 	height: 100%;
 	
-	background-color: rgba(69,186,177,.65);
-	background-image: linear-gradient(to bottom right, rgba(177,243,151,.65) 0%, rgba(132,211,171,.65) 65%, transparent 100%);
+	background-color: rgba(71,183,175,.625);
+	background-image: linear-gradient(to bottom right, rgba(175,239,151,.625) 0%, rgba(127,223,159,.625) 65%, transparent 100%);
 }
 .ui-resizable {
 	position: relative;
@@ -170,7 +170,7 @@
 	padding: 1em 2em;
 	display: inline-block;
 	position: relative;
-	line-height: normal;
+	line-height: 1;
 	cursor: pointer;
 	vertical-align: middle;
 	text-align: center;
@@ -179,8 +179,8 @@
 	-ms-user-select: none;
 	user-select: none;
 	
-	background-color: rgb(69,186,177);
-    /*background-image: linear-gradient(to right, rgba(177,243,151,1), rgba(69,186,177,1));*/
+	background-color: rgb(71,183,175);
+    /*background-image: linear-gradient(to right, rgba(175,239,151,1), rgba(71,183,175,1));*/
     border: none;
     border-radius: 4em;
 	box-shadow: none;
@@ -188,7 +188,7 @@
 
     color: white;
     
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -199,14 +199,14 @@
 
 .ui-dialog .ui-dialog-buttonpane button:focus,
 .ui-dialog .ui-dialog-buttonpane button:hover {
-	background-color: rgb(132,211,171);
+	background-color: rgb(127,223,159);
     background-image: none;
 	text-decoration: none;
 	outline: none;
 	transition: 200ms;
 }
 .ui-dialog .ui-dialog-buttonpane button[disabled] {
-	background-color: rgb(69,186,177);
+	background-color: rgb(71,183,175);
     background-image: none;
 	color: rgba(255,255,255,.35);
 	text-decoration: none;
@@ -216,7 +216,7 @@
 }
 .ui-dialog .ui-dialog-buttonpane button:focus[disabled],
 .ui-dialog .ui-dialog-buttonpane button:hover[disabled] {
-	background-color: rgb(69,186,177);
+	background-color: rgb(71,183,175);
     background-image: none;
 	color: rgba(255,255,255,.35);
 	text-decoration: none;
@@ -354,32 +354,27 @@ button.ui-button::-moz-focus-inner {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2em;
+    padding: 1.5em;
     outline: 0;
     border-radius: .5em;
-	max-width: 50em;
-	min-width: 36.25em;
-	z-index: 100000!important;
-	
-    background: rgba(255,255,255,.9);
-    box-shadow: 0 0 0 .25em rgba(127,127,127,.1);
+    max-width: 36em;
+    min-width: 18em;
+    z-index: 100000!important;
+    background: rgba(255,255,255,.875);
+    box-shadow: 0 0 0 .25em rgba(127,127,127,.125);
 }
 .ui-dialog .ui-dialog-titlebar {
-	padding: 1em;
 	position: relative;
 }
 .ui-dialog .ui-dialog-title {
-	float: left;
-	
-	font-size: 2.25em;
+	font-size: 1.5em;
 	text-align: center;
-	
-	margin: 0 0 -1em;
+	margin: .5rem auto 0;
 	width: 100%;
-	
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	display: block;
 }
 .ui-dialog .ui-dialog-titlebar-close {
 	display: none;
@@ -394,19 +389,18 @@ button.ui-button::-moz-focus-inner {
 .ui-dialog .ui-dialog-content {
 	position: relative;
 	border: 0;
-	padding: 1em;
 	background: none;
 }
 .ui-dialog .ui-dialog-buttonpane {
     text-align: left;
     background-image: none;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 1.5em;
     padding: 0 1.5em;
     max-width: 25em;
 }
 .ui-dialog .ui-dialog-buttonpane button {
-	margin-bottom: 1em;
+	margin-bottom: .75em;
 	cursor: pointer;
 }
 .ui-dialog .ui-resizable-n {
@@ -453,9 +447,9 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-dialog img {
     position: absolute;
-    top: -16.5em;
+    top: -14.5em;
     right: 0;
     left: 0;
     margin: auto;
-    width: 15em;
+    width: 10em;
 }

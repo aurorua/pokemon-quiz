@@ -27,8 +27,8 @@
 	</head>
 	<body class="no-select">
 		<div class="counter">
-			<h1>1 / 25</h1>
-			<p>QUESTIONS</p>
+			<p class="counter-stat">1 / 25</p>
+			<p class="counter-text">Questions</p>
 		</div>
 		<header>
 			<!-- Navigation -->
@@ -37,11 +37,11 @@
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
-							<div class="items-button" data-toggle="tooltip" data-placement="bottom" title="Items">
+							<span class="items-button" data-toggle="tooltip" data-placement="bottom" title="Items">
 								<img class="img-responsive" src="img/pogo-items-icon.svg" alt="Pokemon Go Items">
-								<div class="item-ripple-1 centered-relative"></div>
-								<div class="item-ripple-2 centered-relative"></div>
-							</div>
+								<span class="item-ripple-1 centered-relative"></span>
+								<span class="item-ripple-2 centered-relative"></span>
+							</span>
 						</button>
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -89,7 +89,7 @@
 		</header>
 		
 		<div class="title-wrapper centered">
-			<h1 class="text-center">Start Quiz?</h1>
+			<p class="intro-text text-center">Start Quiz?</p>
 			<img class="title-img img-responsive" src="img/pogo-egg.png" alt="Click the Pokemon Go Egg to start the quiz">
 			<div class="ripple-1 centered"></div>
 			<div class="ripple-2 centered"></div>
@@ -104,17 +104,17 @@
 				<div class="highlight highlight-circle-2"></div>
 				<div class="highlight highlight-circle-3"></div>
 				<div class="arc-wrapper col-xs-offset-2 col-xs-8">
-					<h2 id="cp" class="text-center"><span>QP</span>0</h2>
+					<p id="score" class="text-center"><span>QP</span>0</p>
 					<div class="arc">
 						<div class="arc-partial arc-partial-left"></div>
 						<div class="arc-partial arc-partial-right arc-0"></div>
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<div class="content">
-						<img id="img1" class="card-img img-responsive" src="img/000.svg" alt="">
-						<img id="img2" class="card-img card-img-left img-responsive" src="img/000.svg" alt="">
-						<h3 id="question" class="text-center"> </h3>
+					<div class="card">
+						<img id="img1" class="card-img img-responsive" src="img/000.svg" alt="Pokemon Image">
+						<img id="img2" class="card-img card-img-left img-responsive" src="img/000.svg" alt="Pokemon Image">
+						<p id="question" class="text-center"> </p>
 						<div class="bar">
 							<div class="bar-fill"></div>
 						</div>
@@ -137,10 +137,10 @@
 								<div class="answer-stat"></div>
 							</div>
 							<div class="results">
-								<h1 class="results-stat text-center">0</h1>
+								<p class="results-stat text-center">0/25</p>
 							</div>
 						</div>
-						<div class="close-button" data-toggle="tooltip" data-placement="bottom" title="Restart Game"><img class="img-responsive" src="img/pogo-close-icon.svg"></div>
+						<div class="close-button" data-toggle="tooltip" data-placement="bottom" title="Restart Game"><img class="img-responsive" src="img/pogo-close-icon.svg" alt="Click the Pokemon Go Close Icon to restart"></div>
 					</div>
 				</div>
 			</div>
